@@ -1,11 +1,7 @@
-                                                     //LIMPANDO O CONSOLE E SETANDO O PROMPT
-                                         //PEÇO DESCULPAS MAIS ISSO FOI O MENOS CONFUSO QUE CONSEGUI DEIXARKKJK
 
 
 console.clear()
 const prompt = require('prompt-sync')()
-
-                                                    // COMEÇO DO CODIGO CONTANDO COMO JOGAR E SETANDO VARIAVEIS NECESSARIAS
 
 do{
     console.log(`Seja bem vindo(a) ao jogo, Você pode escolher os elementos usados, o 1º elemento (pedra) escolhido ganha do 3º(tesoura),
@@ -24,7 +20,6 @@ do{
     
     console.log()
 
-                                                //DANDO LOOPING NA QUANTIDADE DE RODADAS DESEJADAS
 
     let rodadas = prompt("Quantas rodadas deseja jogar? ")
 
@@ -32,7 +27,6 @@ do{
 
         let escolhaUsuario = prompt("Qual deseja escolher? ")
 
-                                                //VERIFICAÇÃO SE OS PARAMETROS ESTAO CERTOS
 
         if(escolhaUsuario == pedra || escolhaUsuario == tesoura || escolhaUsuario == papel){
 
@@ -50,7 +44,6 @@ do{
                 
             }
 
-                                            //VERIFICANDO QUEM GANHOU A RODADA
 
                 if (escolhaComputador == escolhaUsuario){
                     console.log(`Ambos escolheram ${escolhaComputador} e houve um empate.`)
@@ -90,7 +83,6 @@ do{
         }else{
             console.log("Resposta Invalida...")
 
-        }                                       //CONTADOR DE VITORIAS COM RESULTADO
 
     }if (vitoriaJogador > vitoriaPc){
         console.log(`O computador ganhou ${vitoriaPc} rodadas, e Você foi campeão com ${vitoriaJogador} rodadas vencidas...`)
