@@ -103,4 +103,4 @@ do{
         vitoriaPc++
     }
     var continuar = prompt("Deseja continuar jogando? ")
-    } while ( continuar == "sim")
+    } while ( continuar == "sim");
